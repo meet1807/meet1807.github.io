@@ -1,15 +1,13 @@
 import React from "react";
 import { Grid, Avatar, makeStyles, Typography, Box } from "@material-ui/core";
 import { GitHub, LinkedIn, Mail, Twitter, Instagram } from "@material-ui/icons";
-import meet from "../static/meet.jpg";
+import meet from "../images/meet.jpg";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
     marginTop: theme.spacing(10),
-    borderTopWidth: 1,
-    borderColor: "red",
-    borderStyle: "solid",
+
     "& > *": {
       marginTop: theme.spacing(5),
     },

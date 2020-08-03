@@ -6,9 +6,7 @@ const useStyle = makeStyles((theme) => ({
   root: {
     display: "flex",
     marginTop: theme.spacing(10),
-    borderTopWidth: 1,
-    borderColor: "red",
-    borderStyle: "solid",
+
     "& > *": {
       marginTop: theme.spacing(5),
     },

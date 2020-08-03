@@ -41,6 +41,7 @@ const Interest = () => {
       <Typography variant="h4" className={classes.heading} align="left">
         Interest
       </Typography>
+
       <List>
         {interest.map((i, e) => (
           <ListItem key={e + i}>

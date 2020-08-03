@@ -11,6 +11,7 @@ import { School } from "@material-ui/icons";
 const useStyle = makeStyles((theme) => ({
   root: {
     display: "flex",
+    marginTop: theme.spacing(5),
   },
   heading: {
     color: "#98a6ad",
