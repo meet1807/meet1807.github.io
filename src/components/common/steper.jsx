@@ -13,6 +13,8 @@ import {
 const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
+    marginLeft: theme.spacing(2),
+    marginRight: theme.spacing(2),
   },
   step: {
     backgroundColor: "#282c34", //"#272935",
@@ -39,7 +41,12 @@ const Steper = ({ steps }) => {
   const classes = useStyles();
   return (
     <div className={classes.root}>
-      <Stepper className={classes.step} orientation="vertical">
+      <Stepper
+        className={classes.step}
+        variant="elevation"
+        elevation={5}
+        orientation="vertical"
+      >
         {steps.map((label, i) => (
           <Step active={true} key={i}>
             <StepLabel>
@@ -70,6 +77,7 @@ const Steper = ({ steps }) => {
               <Box mt={3}>
                 {label.description.map((d, e) => (
                   <div
+                    key={`box${e}`}
                     style={{
                       display: "flex",
                       alignItems: "flex-start",
@@ -81,7 +89,11 @@ const Steper = ({ steps }) => {
                         className={classes.icon}
                       />
                     </Box>
-                    <Typography align="left" className={classes.content}>
+                    <Typography
+                      key={`description${e}`}
+                      align="left"
+                      className={classes.content}
+                    >
                       {d}
                     </Typography>
                   </div>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import About from "./components/about";
 import { Grid } from "@material-ui/core";
 import "./App.css";
@@ -9,9 +9,19 @@ import Experience from "./components/experience";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { faDatabase } from "@fortawesome/free-solid-svg-icons";
+import Projects from "./components/projects";
+import Accomplishments from "./components/accomplishments";
+import Achievements from "./components/Achievements";
+
+import Aos from "aos";
+
+library.add(fab, faDatabase);
 
 function App() {
-  library.add(fab, faDatabase);
+  useEffect(() => {
+    Aos.init({ duration: 2000, easing: "linear", once: true });
+  }, []);
+
   return (
     <div className="App">
       <Grid container>
@@ -22,11 +32,20 @@ function App() {
           <Grid item xs={12} lg={8}>
             <Introduction />
           </Grid>
-          <Grid item xs={12} sm={12}>
+          <Grid item xs={12} sm={12} data-aos="zoom-in-up">
             <Skills />
           </Grid>
-          <Grid item xs={12} sm={12}>
+          <Grid item xs={12} sm={12} data-aos="fade-up">
             <Experience />
+          </Grid>
+          <Grid item xs={12} sm={12}>
+            <Projects />
+          </Grid>
+          <Grid item xs={12} sm={12}>
+            <Accomplishments />
+          </Grid>
+          <Grid item xs={12} sm={12}>
+            <Achievements />
           </Grid>
         </Grid>
       </Grid>

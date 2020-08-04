@@ -39,6 +39,7 @@ const About = () => {
       direction="column"
       alignItems="center"
       className={classes.root}
+      data-aos="fade-up"
     >
       <Grid item>
         <Avatar alt="Meet Patel" src={meet} className={classes.image} />

@@ -37,7 +37,7 @@ const Interest = () => {
   ];
   const classes = useStyle();
   return (
-    <Grid item xs={12} sm={5}>
+    <Grid item xs={12} sm={5} data-aos="fade-up">
       <Typography variant="h4" className={classes.heading} align="left">
         Interest
       </Typography>

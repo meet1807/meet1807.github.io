@@ -27,7 +27,7 @@ const useStyle = makeStyles((theme) => ({
 const Introduction = () => {
   const classes = useStyle();
   return (
-    <Grid item container className={classes.root}>
+    <Grid item container className={classes.root} data-aos="fade-up">
       <Grid item>
         <Typography variant="h3" className={classes.heading}>
           <Box fontWeight="fontWeightMedium" fontSize="h3.fontSize">

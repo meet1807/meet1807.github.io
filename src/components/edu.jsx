@@ -46,7 +46,7 @@ const Edu = () => {
   ];
   const classes = useStyle();
   return (
-    <Grid item xs={12} sm={7}>
+    <Grid item xs={12} sm={7} data-aos="fade-up">
       <Typography variant="h4" className={classes.heading} align="left">
         Education
       </Typography>
