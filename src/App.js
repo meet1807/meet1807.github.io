@@ -19,7 +19,7 @@ library.add(fab, faDatabase);
 
 function App() {
   useEffect(() => {
-    Aos.init({ duration: 2000, easing: "linear", once: true });
+    Aos.init({ duration: 1000, easing: "linear", once: true });
   }, []);
 
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Avatar, makeStyles, Typography, Box } from "@material-ui/core";
+import { Grid, Avatar, makeStyles, Typography } from "@material-ui/core";
 import { GitHub, LinkedIn, Mail, Twitter, Instagram } from "@material-ui/icons";
 import meet from "../images/meet.jpg";
 
@@ -39,27 +39,33 @@ const About = () => {
       direction="column"
       alignItems="center"
       className={classes.root}
-      data-aos="fade-up"
     >
       <Grid item>
         <Avatar alt="Meet Patel" src={meet} className={classes.image} />
       </Grid>
       <Grid item>
         <Typography variant="h3" className={classes.name}>
-          <Box fontWeight="fontWeightBold" fontSize="h3.fontSize">
-            Meet Patel
-          </Box>
+          Meet Patel
         </Typography>
         <Typography variant="h5" className={classes.text}>
           Software Developer
         </Typography>
       </Grid>
       <Grid item>
-        <GitHub className={classes.icon} />
-        <LinkedIn className={classes.icon} />
+        <a href="https://www.github.com/meet1807">
+          <GitHub className={classes.icon} />
+        </a>
+        <a href="https://www.linkedin.com/in/meet1807/">
+          <LinkedIn className={classes.icon} />
+        </a>
+
         <Mail className={classes.icon} />
-        <Twitter className={classes.icon} />
-        <Instagram className={classes.icon} />
+        <a href="https://twitter.com/meet_mist">
+          <Twitter className={classes.icon} />
+        </a>
+        <a href="https://www.instagram.com/_mit777/">
+          <Instagram className={classes.icon} />
+        </a>
       </Grid>
     </Grid>
   );
