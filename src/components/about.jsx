@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   Grid,
   Avatar,
@@ -8,7 +8,9 @@ import {
   Popover,
 } from "@material-ui/core";
 import { GitHub, LinkedIn, Mail, Twitter, Instagram } from "@material-ui/icons";
+
 import meet from "../images/meet.jpg";
+import { CopyToClipboard } from "react-copy-to-clipboard";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -58,6 +60,21 @@ const About = () => {
 
   const open = Boolean(anchorEl);
 
+  useEffect(() => {
+    if (anchorEl) {
+      document.body.onwheel = handlePopoverClose;
+      document.body.addEventListener("touchstart", handlePopoverClose, false);
+    }
+    return () => {
+      document.body.onwheel = undefined;
+      document.body.removeEventListener(
+        "touchstart",
+        handlePopoverClose,
+        false
+      );
+    };
+  }, [anchorEl]);
+
   return (
     <Grid
       item
@@ -104,16 +121,16 @@ const About = () => {
           <LinkedIn className={classes.icon} />
         </a>
 
-        <Mail
-          className={classes.icon}
-          aria-owns={open ? "mouse-over-popover" : undefined}
-          aria-haspopup="true"
-          onMouseEnter={handlePopoverOpen}
-          onMouseLeave={handlePopoverClose}
-          onClick={() => {
-            navigator.clipboard.writeText("meetp6767@gmail.com");
-          }}
-        />
+        <CopyToClipboard text="meetp6767@gmail.com">
+          <Mail
+            className={classes.icon}
+            aria-owns={open ? "mouse-over-popover" : undefined}
+            aria-haspopup="true"
+            onMouseEnter={handlePopoverOpen}
+            onMouseLeave={handlePopoverClose}
+          />
+        </CopyToClipboard>
+
         <Popover
           id="mouse-over-popover"
           className={classes.popover}
@@ -135,6 +152,9 @@ const About = () => {
         >
           <Typography variant="h6" className={classes.text}>
             meetp6767@gmail.com
+          </Typography>
+          <Typography className={classes.text}>
+            (Click the icon to copy)
           </Typography>
         </Popover>
 
