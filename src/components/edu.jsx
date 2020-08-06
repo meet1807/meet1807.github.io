@@ -9,10 +9,6 @@ import {
 import { School } from "@material-ui/icons";
 
 const useStyle = makeStyles((theme) => ({
-  root: {
-    display: "flex",
-    marginTop: theme.spacing(5),
-  },
   heading: {
     color: "#98a6ad",
     marginLeft: theme.spacing(5),
@@ -46,38 +42,42 @@ const Edu = () => {
   ];
   const classes = useStyle();
   return (
-    <Grid item xs={12} sm={7} data-aos="fade-up">
-      <Typography variant="h4" className={classes.heading} align="left">
-        Education
-      </Typography>
-      <List>
-        {education.map((value, key) => (
-          <ListItem key={`list${key}`}>
-            <Grid container key={`container${key}`}>
-              <Grid item key={`item${key}`}>
-                <School key={`school${key}`} className={classes.icon} />
+    <div xs={12} sm={6} data-aos="fade-up">
+      <Grid item>
+        <Typography variant="h4" className={classes.heading} align="left">
+          Education
+        </Typography>
+      </Grid>
+      <Grid item>
+        <List>
+          {education.map((value, key) => (
+            <ListItem key={`list${key}`}>
+              <Grid container key={`container${key}`}>
+                <Grid item key={`item${key}`}>
+                  <School key={`school${key}`} className={classes.icon} />
+                </Grid>
+                <Grid item key={`edu${key}`}>
+                  <Typography
+                    key={value.degree}
+                    className={classes.content}
+                    align="left"
+                  >
+                    {value.degree}
+                  </Typography>
+                  <Typography
+                    key={value.university}
+                    className={classes.title}
+                    align="left"
+                  >
+                    {value.university}
+                  </Typography>
+                </Grid>
               </Grid>
-              <Grid item key={`edu${key}`}>
-                <Typography
-                  key={value.degree}
-                  className={classes.content}
-                  align="left"
-                >
-                  {value.degree}
-                </Typography>
-                <Typography
-                  key={value.university}
-                  className={classes.title}
-                  align="left"
-                >
-                  {value.university}
-                </Typography>
-              </Grid>
-            </Grid>
-          </ListItem>
-        ))}
-      </List>
-    </Grid>
+            </ListItem>
+          ))}
+        </List>
+      </Grid>
+    </div>
   );
 };
 

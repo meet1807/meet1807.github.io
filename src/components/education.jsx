@@ -6,6 +6,10 @@ import Edu from "./edu";
 const useStyle = makeStyles((theme) => ({
   root: {
     display: "flex",
+
+    "& > *": {
+      marginTop: theme.spacing(5),
+    },
   },
 }));
 

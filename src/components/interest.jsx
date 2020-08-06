@@ -9,9 +9,6 @@ import {
 import { FiberManualRecord } from "@material-ui/icons";
 
 const useStyle = makeStyles((theme) => ({
-  root: {
-    display: "flex",
-  },
   heading: {
     color: "#98a6ad",
     marginLeft: theme.spacing(5),
@@ -37,21 +34,24 @@ const Interest = () => {
   ];
   const classes = useStyle();
   return (
-    <Grid item xs={12} sm={5} data-aos="fade-up">
-      <Typography variant="h4" className={classes.heading} align="left">
-        Interest
-      </Typography>
-
-      <List>
-        {interest.map((i, e) => (
-          <ListItem key={e + i}>
-            <FiberManualRecord key={`bullet${e}`} className={classes.icon} />
-            <Typography key={e} className={classes.content} align="left">
-              {i}
-            </Typography>
-          </ListItem>
-        ))}
-      </List>
+    <Grid item xs={12} sm={6} data-aos="fade-up">
+      <Grid item>
+        <Typography variant="h4" className={classes.heading} align="left">
+          Interest
+        </Typography>
+      </Grid>
+      <Grid item>
+        <List>
+          {interest.map((i, e) => (
+            <ListItem key={e + i}>
+              <FiberManualRecord key={`bullet${e}`} className={classes.icon} />
+              <Typography key={e} className={classes.content} align="left">
+                {i}
+              </Typography>
+            </ListItem>
+          ))}
+        </List>
+      </Grid>
     </Grid>
   );
 };

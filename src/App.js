@@ -32,21 +32,21 @@ function App() {
           <Grid item xs={12} lg={8}>
             <Introduction />
           </Grid>
-          <Grid item xs={12} sm={12} data-aos="zoom-in-up">
-            <Skills />
-          </Grid>
-          <Grid item xs={12} sm={12} data-aos="fade-up">
-            <Experience />
-          </Grid>
-          <Grid item xs={12} sm={12}>
-            <Projects />
-          </Grid>
-          <Grid item xs={12} sm={12}>
-            <Accomplishments />
-          </Grid>
-          <Grid item xs={12} sm={12}>
-            <Achievements />
-          </Grid>
+        </Grid>
+        <Grid item xs={12} sm={12} data-aos="zoom-in-up">
+          <Skills />
+        </Grid>
+        <Grid item xs={12} sm={12} data-aos="fade-up">
+          <Experience />
+        </Grid>
+        <Grid item xs={12} sm={12}>
+          <Projects />
+        </Grid>
+        <Grid item xs={12} sm={12}>
+          <Accomplishments />
+        </Grid>
+        <Grid item xs={12} sm={12}>
+          <Achievements />
         </Grid>
       </Grid>
     </div>
