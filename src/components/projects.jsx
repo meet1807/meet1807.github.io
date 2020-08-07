@@ -34,11 +34,13 @@ const Projects = () => {
       title: "Covid-19 Tracker",
       description: `Built a React JS (Front End) application for visualizing covid-19 data using Material UI, and Charts Js.
         • Fetched data from REST APIs and visualized them using charts`,
+      github: "https://github.com/meet1807/covid-19",
     },
     {
       image: "portfolio.PNG",
       title: "Portfolio Design",
       description: `Built a React JS (Front End) application for showcasing skillsets using Material UI.`,
+      github: "https://github.com/meet1807/portfolio",
     },
     {
       image: "sr.jpg",

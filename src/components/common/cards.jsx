@@ -10,11 +10,13 @@ import {
   Box,
   Paper,
   CardActions,
-  IconButton,
+  //IconButton,
+  Button,
+  Grid,
 } from "@material-ui/core";
 
-import ShareIcon from "@material-ui/icons/Share";
-import FavoriteIcon from "@material-ui/icons/Favorite";
+//import ShareIcon from "@material-ui/icons/Share";
+//import FavoriteIcon from "@material-ui/icons/Favorite";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -111,12 +113,27 @@ const Cards = ({ projects }) => {
           disableSpacing
           style={{ display: "flex", alignSelf: "end" }}
         >
-          <IconButton aria-label="add to favorites">
-            <FavoriteIcon className={classes.icon} />
-          </IconButton>
-          <IconButton aria-label="share">
+          <Grid container>
+            <Box component="div" ml={1}>
+              <Button
+                size="small"
+                href={project.github}
+                style={{ color: "#98a6ad" }}
+              >
+                GitHub
+              </Button>
+              <Button
+                size="small"
+                href={project.link}
+                style={{ color: "#98a6ad" }}
+              >
+                Live - App
+              </Button>
+            </Box>
+          </Grid>
+          {/* <IconButton aria-label="share" style={{ flex: 1 }}>
             <ShareIcon className={classes.icon} />
-          </IconButton>
+          </IconButton> */}
         </CardActions>
       </Box>
     </Card>

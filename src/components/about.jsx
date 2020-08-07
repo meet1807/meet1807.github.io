@@ -6,6 +6,7 @@ import {
   Typography,
   Button,
   Popover,
+  Box,
 } from "@material-ui/core";
 import { GitHub, LinkedIn, Mail, Twitter, Instagram } from "@material-ui/icons";
 
@@ -15,10 +16,10 @@ import { CopyToClipboard } from "react-copy-to-clipboard";
 const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
-    marginTop: theme.spacing(12),
+    marginTop: theme.spacing(13),
 
     "& > *": {
-      marginTop: theme.spacing(3),
+      marginTop: theme.spacing(2),
     },
   },
   popover: {
@@ -92,20 +93,26 @@ const About = () => {
           Meet Patel
         </Typography>
         <Typography variant="h5" className={classes.text}>
-          Software Developer
+          Software Engineer
         </Typography>
       </Grid>
       <Grid item>
         <Button
           variant="outlined"
           color="inherit"
-          href="#resume"
           className={classes.text}
+          href="https://drive.google.com/file/d/1g5Ox187cZh8AEssir1By4JwlpwrzUGRf/view?usp=sharing"
         >
           Resume
         </Button>
       </Grid>
+
       <Grid item>
+        <Box mb={2}>
+          <Typography variant="h6" className={classes.text}>
+            To have a cup of coffee...
+          </Typography>
+        </Box>
         <a
           href="https://www.github.com/meet1807"
           target="_blank"
