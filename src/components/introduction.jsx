@@ -39,14 +39,14 @@ const Introduction = () => {
         <Typography variant="h6" className={classes.content} align="justify">
           An enthusiastic person in computer sciecnce with a degree of master's
           who loves to build things to solve real life Problems. I love
-          exploring new techonlogies integrate machine learning and computer
-          vision techniques to bring it to life.
+          exploring new techonlogies and integrating machine learning and
+          computer vision techniques to bring it to life.
         </Typography>
       </Grid>
       <Grid item>
         <Typography variant="h6" className={classes.content} align="justify">
-          An enthusiastic person in computer sciecnce with a degree of master's
-          who loves to build things to solve real life Problems.
+          When I'm not hammering my keyboard I watch and play counter strike,
+          listen music, follow trail and learn interesting things.
         </Typography>
       </Grid>
       <Grid item container direction="row" flex={1}>

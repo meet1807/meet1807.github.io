@@ -26,8 +26,11 @@ const Projects = () => {
     {
       image: "movie.jpg",
       title: "Movie Box – A movie rental app",
-      description: `Built a React JS (Front End) application for movie rental service using Node JS (Back End) and Express JS.
-          • Built database in MongoDB and implemented features such as user registration/authentication using auth0, secure payment gateway, content search and review-ratings.`,
+      description: `•	Built full stack application for movie rental service using React, Node JS  and Express JS.
+          • Built database in MongoDB and performed CRUD operations on user database.
+          •	Implemented lazy loading (Load images only when in viewport) for minimize network usage and maximize performance to load website faster.`,
+      github: "https://github.com/meet1807/app-moviebox",
+      link: "https://app-moviebox.herokuapp.com/home",
     },
     {
       image: "covid.PNG",
@@ -35,12 +38,14 @@ const Projects = () => {
       description: `Built a React JS (Front End) application for visualizing covid-19 data using Material UI, and Charts Js.
         • Fetched data from REST APIs and visualized them using charts`,
       github: "https://github.com/meet1807/covid-19",
+      link: "https://covid-19-bc826.web.app/",
     },
     {
       image: "portfolio.PNG",
       title: "Portfolio Design",
       description: `Built a React JS (Front End) application for showcasing skillsets using Material UI.`,
       github: "https://github.com/meet1807/portfolio",
+      link: "https://meet1807.github.io",
     },
     {
       image: "sr.jpg",

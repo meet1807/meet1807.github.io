@@ -44,16 +44,16 @@ const useStyle = makeStyles((theme) => ({
 const Experience = () => {
   const job = [
     {
-      title: "Software Developer",
+      title: "Full Stack Developer",
       company: "CricGif",
       year: "July 2019 - Current",
       description: [
         `
-      Building React application for project demonstration and digital advertisements, promoted growth by 20% resulting
-  in 15% of annual revenue increase.`,
+        Rebuilt static site to be fully responsive, dynamic and improve performance.`,
         `
-  Designed and Built embedded software using C# to quickly extract and manage the sensor’s data, accelerated
-  workflow by 10-15%.`,
+        Set up server and custom middleware using Node and Express.`,
+        `Leading team of 2 to design and develop a front end using React.`,
+        `CricGif aims to provide gif for every ball of cricket (sports) to enhance the experience of watching live streams on the go using OpenCV and machine learning models.`,
       ],
     },
     {

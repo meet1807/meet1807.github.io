@@ -101,7 +101,7 @@ const About = () => {
           variant="outlined"
           color="inherit"
           className={classes.text}
-          href="https://drive.google.com/file/d/1g5Ox187cZh8AEssir1By4JwlpwrzUGRf/view?usp=sharing"
+          href="https://drive.google.com/file/d/1u9flIrQ6Scm9fCr-8SQy5fUjaQ7x8Jxn/view?usp=sharing"
         >
           Resume
         </Button>
