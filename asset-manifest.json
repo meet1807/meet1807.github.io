@@ -1,30 +1,30 @@
 {
   "files": {
-    "main.css": "/meet1807.github.io.git/static/css/main.341dcf5a.chunk.css",
-    "main.js": "/meet1807.github.io.git/static/js/main.acaf22d5.chunk.js",
-    "main.js.map": "/meet1807.github.io.git/static/js/main.acaf22d5.chunk.js.map",
-    "runtime-main.js": "/meet1807.github.io.git/static/js/runtime-main.bdee66f5.js",
-    "runtime-main.js.map": "/meet1807.github.io.git/static/js/runtime-main.bdee66f5.js.map",
-    "static/css/2.4707e12a.chunk.css": "/meet1807.github.io.git/static/css/2.4707e12a.chunk.css",
-    "static/js/2.a32d97cf.chunk.js": "/meet1807.github.io.git/static/js/2.a32d97cf.chunk.js",
-    "static/js/2.a32d97cf.chunk.js.map": "/meet1807.github.io.git/static/js/2.a32d97cf.chunk.js.map",
-    "index.html": "/meet1807.github.io.git/index.html",
-    "precache-manifest.9ed35ad988d30e4d6ab33e546f13dd12.js": "/meet1807.github.io.git/precache-manifest.9ed35ad988d30e4d6ab33e546f13dd12.js",
-    "service-worker.js": "/meet1807.github.io.git/service-worker.js",
-    "static/css/2.4707e12a.chunk.css.map": "/meet1807.github.io.git/static/css/2.4707e12a.chunk.css.map",
-    "static/css/main.341dcf5a.chunk.css.map": "/meet1807.github.io.git/static/css/main.341dcf5a.chunk.css.map",
-    "static/js/2.a32d97cf.chunk.js.LICENSE.txt": "/meet1807.github.io.git/static/js/2.a32d97cf.chunk.js.LICENSE.txt",
-    "static/media/covid.PNG": "/meet1807.github.io.git/static/media/covid.77dced3b.PNG",
-    "static/media/meet.jpg": "/meet1807.github.io.git/static/media/meet.ccbce09d.jpg",
-    "static/media/movie.jpg": "/meet1807.github.io.git/static/media/movie.5165c26e.jpg",
-    "static/media/portfolio.PNG": "/meet1807.github.io.git/static/media/portfolio.a52af7ec.PNG",
-    "static/media/sr.jpg": "/meet1807.github.io.git/static/media/sr.4e1bf116.jpg"
+    "main.css": "/meet1807.github.io/static/css/main.341dcf5a.chunk.css",
+    "main.js": "/meet1807.github.io/static/js/main.b18a196e.chunk.js",
+    "main.js.map": "/meet1807.github.io/static/js/main.b18a196e.chunk.js.map",
+    "runtime-main.js": "/meet1807.github.io/static/js/runtime-main.9d694f3b.js",
+    "runtime-main.js.map": "/meet1807.github.io/static/js/runtime-main.9d694f3b.js.map",
+    "static/css/2.4707e12a.chunk.css": "/meet1807.github.io/static/css/2.4707e12a.chunk.css",
+    "static/js/2.a32d97cf.chunk.js": "/meet1807.github.io/static/js/2.a32d97cf.chunk.js",
+    "static/js/2.a32d97cf.chunk.js.map": "/meet1807.github.io/static/js/2.a32d97cf.chunk.js.map",
+    "index.html": "/meet1807.github.io/index.html",
+    "precache-manifest.ff35b611d89b4e92b9af8df23dcf1def.js": "/meet1807.github.io/precache-manifest.ff35b611d89b4e92b9af8df23dcf1def.js",
+    "service-worker.js": "/meet1807.github.io/service-worker.js",
+    "static/css/2.4707e12a.chunk.css.map": "/meet1807.github.io/static/css/2.4707e12a.chunk.css.map",
+    "static/css/main.341dcf5a.chunk.css.map": "/meet1807.github.io/static/css/main.341dcf5a.chunk.css.map",
+    "static/js/2.a32d97cf.chunk.js.LICENSE.txt": "/meet1807.github.io/static/js/2.a32d97cf.chunk.js.LICENSE.txt",
+    "static/media/covid.PNG": "/meet1807.github.io/static/media/covid.77dced3b.PNG",
+    "static/media/meet.jpg": "/meet1807.github.io/static/media/meet.ccbce09d.jpg",
+    "static/media/movie.jpg": "/meet1807.github.io/static/media/movie.5165c26e.jpg",
+    "static/media/portfolio.PNG": "/meet1807.github.io/static/media/portfolio.a52af7ec.PNG",
+    "static/media/sr.jpg": "/meet1807.github.io/static/media/sr.4e1bf116.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.bdee66f5.js",
+    "static/js/runtime-main.9d694f3b.js",
     "static/css/2.4707e12a.chunk.css",
     "static/js/2.a32d97cf.chunk.js",
     "static/css/main.341dcf5a.chunk.css",
-    "static/js/main.acaf22d5.chunk.js"
+    "static/js/main.b18a196e.chunk.js"
   ]
 }
