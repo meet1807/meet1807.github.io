@@ -37,7 +37,7 @@ const Introduction = () => {
       </Grid>
       <Grid item>
         <Typography variant="h6" className={classes.content} align="justify">
-          An enthusiastic person in computer sciecnce with a degree of master's
+          An enthusiastic person in computer science with a degree of master's
           who loves to build things to solve real life Problems. I love
           exploring new techonlogies and integrating machine learning and
           computer vision techniques to bring it to life.
